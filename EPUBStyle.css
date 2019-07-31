@@ -1,0 +1,192 @@
+
+/* For the slider */
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
+  border-radius: 5px;   
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 35px;
+  height: 35px;
+  border-radius: 30%; 
+  background:rgb(20, 182, 5);
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 35px;
+  height: 35px;
+  border-radius: 30%; 
+  background:rgb(20, 182, 5);
+  cursor: pointer;
+}
+
+/* For the Toggle Switch Q3 */
+.onoffswitch {
+    position: relative; width: 200px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+    display: none;
+}
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 2px solid ; border-radius: 20px;
+}
+.onoffswitch-inner {
+    display: block; width: 200%; margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block; float: left; width: 50%; height: 58px; padding: 0; line-height: 58px;
+    font-size: 40px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+    content: "BIEN";
+    padding-left: 21px;
+    background-color: rgb(20, 182, 5); color: #FFFFFF;
+}
+.onoffswitch-inner:after {
+    content: "MAL";
+    padding-right: 21px;
+    background-color: rgb(224, 44, 44); color: #999999;
+    text-align: right;
+}
+.onoffswitch-switch {
+    display: block; width: 48px; margin: 5px;
+    background: #FFFFFF;
+    position: absolute; top: 0; bottom: 0;
+    right: 138px;
+    border: 2px solid ; border-radius: 41px;
+    transition: all 0.3s ease-in 0s; 
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px; 
+}
+
+/*  Q4 */
+
+#section4 {
+        width:auto; 
+     }
+  
+  label{font-weight: bolder;  }
+
+  
+  h2 {
+   padding: 15px;
+    font-weight: bolder; 
+
+
+  } 
+  
+  optgroup {
+
+    padding: 10px 5px;
+
+  }
+
+  /* Q5 Checkbox */
+
+  select {
+    display: flex;
+   justify-content: flex-start;
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -webkit-padding-end: 20px;
+    -moz-padding-end: 20px;
+    -webkit-padding-start: 2px;
+    -moz-padding-start: 2px;
+    background-color: #F07575; /* fallback color if gradients are not supported */
+    background-image: url(../images/select-arrow.png), -webkit-linear-gradient(top, #E5E5E5, #F4F4F4); /* For Chrome and Safari */
+    background-image: url(../images/select-arrow.png), -moz-linear-gradient(top, #E5E5E5, #F4F4F4); /* For old Fx (3.6 to 15) */
+    background-image: url(../images/select-arrow.png), -ms-linear-gradient(top, #E5E5E5, #F4F4F4); /* For pre-releases of IE 10*/
+    background-image: url(../images/select-arrow.png), -o-linear-gradient(top, #E5E5E5, #F4F4F4); /* For old Opera (11.1 to 12.0) */ 
+    background-image: url(../images/select-arrow.png), linear-gradient(to bottom, #E5E5E5, #F4F4F4); /* Standard syntax; must be last */
+    background-position: center right;
+    background-repeat: no-repeat;
+    border: 1px solid #AAA;
+    border-radius: 5px;
+    box-shadow: 0px 1px 3px rgba(223, 22, 22, 0.1);
+    color: inherit;
+    font-size:inherit;
+    margin: 1;
+    padding-top: 2px;
+    padding-bottom: 5px;
+    text-overflow: ellipsis;
+   }
+   
+   br {
+line-height: 1.3em;
+
+   }
+
+   input[type=text]:focus , 
+   input[type=email]:focus,
+   input[type=number]:focus
+      {
+    background-color: lightblue;
+  }
+
+
+  button:hover{
+
+    cursor: -webkit-grabbing; cursor: grabbing;
+
+  }
+  #sub:hover {
+     font-family:Verdana, Geneva, sans-serif;
+    cursor:pointer;
+  }
+
+  .form-radio
+{
+     -webkit-appearance: none;
+     -moz-appearance: none;
+     appearance: none;
+     display: inline-block;
+     position: relative;
+     background-color:rgb(20, 182, 5);
+     color: #666;
+     top: 10px;
+     height: 30px;
+     width: 30px;
+     border: 0;
+     border-radius: 50px;
+     cursor: pointer;     
+     margin-right: 7px;
+     outline: none;
+}
+.form-radio:checked::before
+{
+     position: absolute;
+     font: 13px/1 'Open Sans', sans-serif;
+     left: 11px;
+     top: 7px;
+     content: '\02143';
+     transform: rotate(40deg);
+}
+.form-radio:hover
+{
+     background-color: #f7f7f7;
+}
+.form-radio:checked
+{
+     background-color: #550202;
+}
+

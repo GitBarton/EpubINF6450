@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" lang="fr-CA"/>
+        <link rel="stylesheet" type="text/css" href="EPUBStyle.css"/>
+        <script  src="jquery-3.4.1.min.js"></script>
+        <script  src="Epub.js"></script>
+        <title>EL TiTRE2</title>
+    </head>
+
+
+
+<body>
+
+    <form id="formSorcier"  action="mailto:j_f_barrette@hotmail.com?subject=EPUB%20--%20--Rétroaction%20INF%206450%20" method="post" ENCTYPE="text/plain" accept-charset="utf-8">
+        
+        <fieldset>
+            <!-- Form Name -->
+        <legend>Avant de sauter dans le chaudron</legend>
+
+  
+
+       <section id="section1">
+
+            <!-- Q1  -->
+            <label for="idq1radio1">QUESTION 1 -- Êtes-vous superstitieux?<br/></label>
+            <hr style="visibility:hidden;" />
+
+                    <input id="idq1radio1" name="Q1_Superstition" type="radio" class="form-radio" value=" Oui -> superstitieux"  onclick="javascript:document.getElementById('feedq1').style.display = 'none';" checked="checked" />
+                    <label for="idq1radio1">Oui, très superstitieux </label> 
+                <br/>
+                   
+                    
+                    <input id="idq1radio2" name="Q1_Superstition" type="radio" class="form-radio" value=" Non -> je suis viril" onclick="javascript:document.getElementById('feedq1').style.display = 'none';" /> 
+                    <label for="idq1radio2">Non, je suis bin trop viril moi là! </label>
+                <br/>
+                    
+                  
+                    <input id="idq1radio3" name="Q1_Superstition" type="radio" class="form-radio" value=" Moyen -> un brin dans le noir" onclick="javascript:document.getElementById('feedq1').style.display = 'block';" />                                
+                    <label for="idq1radio3">Bin, juste un brin dans le noir le soir <em>(try me)</em></label>        
+                    
+                <!-- Section Réponse/Feedback pour Q1-->
+                    <p id="feedq1" style="display: none;" class="feedback">(Moi aussi un ti-brin mais <strong><u>juste dans le noir là)</u></strong></p>        
+            
+
+        </section>
+
+
+    <br/>
+    
+        <!-- Q2  -->
+
+        <section id="section2" style="width: 65%; padding:15px 15px 15px 5px">
+
+              <label style="padding-top: 20px;" for="q2OutputSliderId">QUESTION 2 -- Êtes-vous fan de l'ésotérisme et du côté mystique de la magie? - (échelle de 1 à 10)<br/></label>
+              <hr style="visibility:hidden;" />
+              <input type="range" name="Q2_Mystique" min="1" max="10" value="5" class="slider" oninput="q2OutputSliderId.value = ('Votre valeur: ' + q2InputSliderId.value)" id="q2InputSliderId" />
+             
+              <output name="Q2_Mystique" id="q2OutputSliderId">Votre valeur: 5</output>
+                            
+
+        </section>
+
+    <br/>
+
+
+
+<!-- Q3  -->
+
+        <section id="section3" >
+
+            <label for="myonoffswitch">QUESTION 3 -- Croyez-vous que la sorcellerie est mise à profit majoritairement pour des causes foncièrement bonnes (LE BIEN) ou mauvaises (LE MAL)</label>
+            <hr style="visibility:hidden;" />
+                          
+       
+
+            <!-- POUR LA TOGGLE SWITCH  -->
+
+                     <div class="onoffswitch">
+
+                        <input type="checkbox" name="Q3_Sorcellerie_pour_Bien" checked="checked" class="onoffswitch-checkbox" id="myonoffswitch" onclick="alert(encoded); play();" /> 
+                            <label class="onoffswitch-label" for="myonoffswitch">
+                               <span class="onoffswitch-inner"></span>
+                               <span class="onoffswitch-switch"></span>
+                            </label>
+                    </div>
+
+                <!-- LE SON-->
+
+                <audio id="audio" src="Laughter.ogg" ></audio>
+
+            <!-- POUR LA TOGGLE SWITCH (FIN) -->
+                  
+        <br/>
+        </section>
+
+  
+
+
+<!-- Q4  -->
+  
+
+        <section id="section4">
+            <br/>
+                <label for="métier" style="padding-bottom: 10px" >QUESTION 4 -- De nos jours, et selon votre humble opinion, quels métiers se rapproche le plus du domaine de la sorcellerie? Plusieurs choix sont possibles <small>(Utiliser CTRL)</small></label>
+                <hr style="visibility:hidden;" />
+                      
+            <select name="Q4_Domaine_Semblable"  id="métier" class="métier" multiple size="14">
+                                               
+                <optgroup  label="Les gens oeuvrant dans le domaine pseudo-ésotérique">
+                    <option id="Q4_1">Diseurs de bonne aventure</option>
+                    <option id="Q4_2">Guérisseurs apprentis</option>
+                    <option id="Q4_3">Chamans à temps partiel</option>
+                    <option id="Q4_4">Vendeurs de bracelets à partir de noisetier</option>
+                </optgroup>
+
+                <optgroup label="Spécialiste de la santé">
+                    <option id="Q4_5">Psychologues</option>
+                    <option id="Q4_6">Chirurgiens</option>
+                    <option id="Q4_7">Pharmacologues</option>
+                </optgroup>
+
+            <optgroup label="Domaine des Affaires">
+                <option id="Q4_8">Agent Immobilliers</option>
+                <option id="Q4_9">Avocats</option>
+            </optgroup>
+
+            <optgroup label="les Faiseurs de magie">
+                <option id="Q4_10">Gardiens d'enfants</option>
+                <option id="Q4_11">Infirmiers</option>
+                <option id="Q4_12">Médecins de famille</option>
+                <option id="Q4_13">Bénévoles de toutes sortes</option>
+                <option hidden selected id="Q4_14">Aucun</option>
+
+            </optgroup>
+            
+            </select>
+          
+
+
+    </section>
+
+
+<br/>
+<br/>
+
+<!-- Q5  -->
+    
+
+<section id="section5">
+
+        <label for="idTextQ5">QUESTION 5 -- Est-ce que la sorcellerie est toujours un sujet d'actualité?</label>
+        <hr style="visibility:hidden;" /> 
+        
+
+
+     <!--onkeypress="return runScript(event);" -->
+
+       <input name="Q5_A_la_Mode" style="width:350px" type="text" id="idTextQ5" list="choixQ5" placeholder="Tappez votre choix ou une recette pré-mâchée" />
+
+       <button type="button" id="buttonvalider" onclick="runScript(event); return false;">VALIDER</button>
+       
+       <button type="button" id="buttonreset" onclick="ClearQ5(); return false;">EFFACER</button>
+        
+        <datalist id="choixQ5">
+                <option value="Oui, sans l'ombre d'un doute">
+                <option value="Oui, mais c'est pas le Pérou non plus...">
+                <option value="bof....">
+                <option value="Full-désuet comme topic la genre">
+        </datalist>
+      <br/>
+</section>
+
+
+<!-- Q6  -->
+
+<section>
+
+    <label for="nomQ6">RÉTROACTION -- Vous voulez me joindre pour me faire parvenir vos entrées et votre rétroaction?</label><br/>
+    <hr style="visibility:hidden;" />
+    <label for="nomQ6">Votre nom : </label>
+
+    <input type="text" id="nomQ6" name="Retroaction_NomQ6" placeholder="Votre nom de sorcier?"/><br/>
+    
+    <label for="emailQ6">Votre courriel : </label>
+    <input type="email" id="emailQ6" name="Retroaction_EmailQ6" placeholder="Votre adresse courriel?" /><br/>
+    
+    <label for="ratingQ6">Votre appréciation : </label> 
+    <input type="number" id="ratingQ6" name="Retroaction_Rating" placeholder="1 à 10?" value="5" min="1" max="10" /><br/>
+    
+    <br/><br/>
+    
+    <button id="Sommaire"  onclick="return extractAll()">LE COMTPE EST BON?</button>
+
+    <input type="submit" id="sub" value="SUBMIT" />
+    <br/>
+
+</section>
+
+        </fieldset>
+    </form>
+   
+   
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
