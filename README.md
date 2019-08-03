@@ -2,5 +2,5 @@
 
 Simply download the 4 files and save them in a single folder. 
 
-Then launch the .HtmL file to get a preview of the form being offered. 
+Then launch the .HTML file to get a preview of the form being offered. 
 
