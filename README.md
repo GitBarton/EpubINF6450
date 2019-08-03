@@ -1,6 +1,7 @@
 # EpubINF6450
 
-Simply download the 4 files and save them in a single folder. 
+    1) Simply download the 4 files and save them in a single folder. 
 
-Then launch the .HTML file to get a preview of the form being offered. 
+    2) Then launch the Essai_Epub_Form.HTML file to get a preview of the form being offered. 
+    
 
